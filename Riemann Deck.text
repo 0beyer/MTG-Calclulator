@@ -1,0 +1,58 @@
+ArrayList<Pair> atr = new ArrayList<>();
+
+ArrayList<String> a0 = new ArrayList<>();
+a0.add("Land");
+ArrayList<String> a1 = new ArrayList<>();
+a1.add("Ramp");
+ArrayList<String> a2 = new ArrayList<>();
+a2.add("Land");
+a2.add("SacLand");
+ArrayList<String> a3 = new ArrayList<>();
+a3.add("LandRecursion");
+ArrayList<String> a4 = new ArrayList<>();
+a4.add("Counters");
+ArrayList<String> a5 = new ArrayList<>();
+a5.add("Counterspell");
+ArrayList<String> a6 = new ArrayList<>();
+a6.add("Draw");
+ArrayList<String> a7 = new ArrayList<>();
+a7.add("LandSac");
+a7.add("Draw");
+ArrayList<String> a8 = new ArrayList<>();
+a8.add("Trample");
+ArrayList<String> a9 = new ArrayList<>();
+a9.add("Ramp");
+a9.add("Draw");
+ArrayList<String> a10 = new ArrayList<>();
+a10.add("Land");
+a10.add("Ramp");
+ArrayList<String> a11 = new ArrayList<>();
+a11.add("Misc");
+
+Pair Lands = new Pair(25, a0);
+Pair Ramp = new Pair(18, a1);
+Pair SacLands = new Pair(7, a2);
+Pair LandRecursion = new Pair(6, a3);
+Pair Counters = new Pair(10, a4);
+Pair Counterspell = new Pair(8, a5);
+Pair Draw = new Pair(4, a6);
+Pair DrawLandsac = new Pair(2, a7);
+Pair Trample = new  Pair(4, a8);
+Pair DrawRamp = new  Pair(3, a9);
+Pair LandRamp = new Pair(1, a10);
+Pair Misc = new Pair(10, a11)
+        
+atr.add(Lands);
+atr.add(Ramp);
+atr.add(SacLands);
+atr.add(LandRecursion);
+atr.add(Counters);
+atr.add(Counterspell);
+atr.add(Draw);
+atr.add(DrawLandsac);
+atr.add(Trample);
+atr.add(DrawRamp);
+atr.add(LandRamp);
+atr.add(Misc);
+    
+fillDeck(deck, atr);

@@ -1,0 +1,19 @@
+ArrayList<Pair> atr = new ArrayList<>();
+
+ArrayList<String> a0 = new ArrayList<>();
+a0.add("Land");
+ArrayList<String> a1 = new ArrayList<>();
+a1.add("Counter");
+
+Pair p0 = new Pair(98, a0);
+Pair p1 = new Pair(1, a1);
+        
+atr.add(p0);
+atr.(p1);
+    
+fillDeck(deck, atr);
+
+System.err.println(attributeCount(deck, "Land") + " Lands");
+System.out.println(attributeCount(deck, "Ramp") + " Ramps");
+System.out.println(attributeCount(deck, "Counter") + " Counters");
+System.out.println(attributeList(deck));
