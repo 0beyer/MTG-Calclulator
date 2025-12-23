@@ -1,30 +1,34 @@
-import java.util.ArrayList;
-
 public class Card {
-    private ArrayList<String> attributes;
+    private String[] attributes;
+    private int count;
 
-    public Card(ArrayList<String> arr) {
+    public Card(int c, String[] arr) {
+        count = c;
         attributes = arr;
     }
 
     public Boolean containsAttribute(String str) {
-        for(int i = 0; i < attributes.size(); i++) {    
-            if (attributes.get(i).equals(str)) {
+        for(int i = 0; i < attributes.length; i++) {    
+            if (attributes[i].equals(str)) {
                 return true;
             }
         }
         return false;
     }
 
-    public void setAttributes(ArrayList<String> arr) {
+    public void setAttributes(String[] arr) {
         attributes = arr;
     }
 
-    public ArrayList<String> getAttributes() {
+    public String[] getAttributes() {
         return attributes;
     }
 
+    public int getCount() {
+        return count;
+    }
+
     public Boolean isBlank() {
-        return (attributes.size() == 0);
+        return (attributes.length == 0);
     }
 }
