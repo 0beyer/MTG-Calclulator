@@ -16,19 +16,11 @@ public class Card {
         return false;
     }
 
-    public void setAttributes(String[] arr) {
-        attributes = arr;
-    }
-
     public String[] getAttributes() {
         return attributes;
     }
 
     public int getCount() {
         return count;
-    }
-
-    public Boolean isBlank() {
-        return (attributes.length == 0);
     }
 }

@@ -81,7 +81,7 @@ public class Main {
 
         float perc = 1 - percNot;
 
-        return ((double) Math.round(((perc) * 100) * 100) / 100) + "%";
+        return ((double) Math.round(((perc) * 10000)) / 100) + "%";
     }
 
     public static String atrStat(ArrayList<Card> deck, String[] atr, int drawTop, int atrCount) {
